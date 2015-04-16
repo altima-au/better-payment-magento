@@ -14,5 +14,3 @@ For the documentation and detailed installation guide check http://www.slideshar
 The extension is free (MIT licence) you are also welcome to fork and modify it or make pull request
 
 Developer website - http://shop.altima.net.au
-
-h
