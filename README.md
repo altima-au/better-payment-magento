@@ -6,7 +6,7 @@ It modifies default credit card payment form so it becomes much more intuitive a
 
 The image below (sourced from Jesse Pollak page) illustrates how it works
 
-ttps://camo.githubusercontent.com/312e819c130acb5d17a5a8568c4ae6c315210dac/687474703a2f2f692e696d6775722e636f6d2f71473354656e4f2e676966
+https://camo.githubusercontent.com/312e819c130acb5d17a5a8568c4ae6c315210dac/687474703a2f2f692e696d6775722e636f6d2f71473354656e4f2e676966
 
 
 For the documentation and detailed installation guide check http://www.slideshare.net/AlexLevashov/altima-better-creditcardform100instructions
