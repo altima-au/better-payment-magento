@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Altima Better Credit Card Form Extension
+ *
+ * Altima web systems.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is available through the world-wide-web at this URL:
+ * http://blog.altima.net.au/lookbook-magento-extension/lookbook-professional-licence/
+ *
+ * @category   Altima
+ * @package    Altima_BetterCreditCardForm
+ * @author     Altima Web Systems http://altimawebsystems.com/
+ * @license    http://blog.altima.net.au/lookbook-magento-extension/lookbook-professional-licence/
+ * @email      support@altima.net.au
+ * @copyright  Copyright (c) 2012 Altima Web Systems (http://altimawebsystems.com/)
+ */
+-->
+<config>
+    <modules>
+        <Altima_BetterCreditCardForm>
+            <version>1.0.0</version>
+        </Altima_BetterCreditCardForm>
+    </modules>
+    <global>
+        <models>
+            <altima_bettercreditcardform>
+                <class>Altima_BetterCreditCardForm_Model</class>
+            </altima_bettercreditcardform>
+        </models>
+        <extraconfig />
+        <blocks>
+            <altima_bettercreditcardform>
+                <class>Altima_BetterCreditCardForm_Block</class>
+            </altima_bettercreditcardform>
+        </blocks>
+        <resources>
+            <altima_bettercreditcardform_setup>
+                <setup>
+                    <module>Altima_BetterCreditCardForm</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </altima_bettercreditcardform_setup>
+            <altima_bettercreditcardform_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </altima_bettercreditcardform_write>
+            <altima_bettercreditcardform_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </altima_bettercreditcardform_read>
+        </resources>
+        <helpers>
+            <altima_bettercreditcardform>
+                <class>Altima_BetterCreditCardForm_Helper</class>
+            </altima_bettercreditcardform>
+        </helpers>
+        <events>
+            <controller_action_layout_render_before_checkout_onepage_index>
+                <observers>
+                    <bettercreditcardform_layout_generate_observer>
+                        <type>singleton</type>
+                        <class>altima_bettercreditcardform/layout_generate_observer</class>
+                        <method>includeJavascripts</method>
+                    </bettercreditcardform_layout_generate_observer>
+                </observers>
+            </controller_action_layout_render_before_checkout_onepage_index>
+        </events>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <altima_bettercreditcardform>
+                                            <title>BetterCreditCartForm section</title>
+                                        </altima_bettercreditcardform>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Altima_BetterCreditCardForm before="Mage_Adminhtml">Altima_BetterCreditCartForm_Adminhtml</Altima_BetterCreditCardForm>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

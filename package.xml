@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Altima_BetterCreditCardForm</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT"> The MIT License (MIT)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Better credit card form extension for Magento eCommerce - more user friendly way to enter credit card information on checkout.</summary>
+    <description>Better credit card form extension for Magento eCommerce helps online store customer entering credit card information during checkout process. It provides better user experience: users sees the data entered on the dynamic credit card images that changes as new information added or changed. Hence there is less chance to make an error and successfully complete checkout process. The extension is fully open-source. It is based on http://jessepollak.github.io/card/ library. Better credit card form extension is developed by Altima Interactive - http://shop.altima.net.au</description>
+    <notes>First preview release</notes>
+    <authors><author><name>Andrey</name><user>altimaweb</user><email>andrey.stepin@altima.com.ua</email></author></authors>
+    <date>2015-04-23</date>
+    <time>11:39:33</time>
+    <contents><target name="magelocal"><dir name="Altima"><dir name="BetterCreditCardForm"><dir name="Block"><file name="Bettercreditcardformjs.php" hash="acacd39fa7c7bf21a30dceb537282096"/></dir><dir name="Helper"><file name="Data.php" hash="295924398cf8bc1ada16fd923806975a"/></dir><dir name="Model"><dir name="Layout"><dir name="Generate"><file name="Observer.php" hash="1129f3e0f0f0ca7ecde768abf39dac2e"/></dir></dir></dir><dir name="controllers"><dir name="Adminhtml"><file name="BettercreditcartformController.php" hash="71e98371cc54ba1bd2512451c4034954"/></dir></dir><dir name="etc"><file name="config.xml" hash="c88bca088b6dd9c36ad3851bd03be724"/><file name="system.xml" hash="495997ea9d6cb105af871952f4e4d0cb"/></dir><dir name="sql"><dir name="altima_bettercreditcardform_setup"><file name="install-1.0.0.php" hash="b9cf5f850fe4a0b59ebaab6a5eda0b10"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Altima_BetterCreditCardForm.xml" hash="07086ffb5378474f277b209e2b9bdc7f"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Altima_BetterCreditCardForm.csv" hash="596284d0487419eb8be4c474a9cf730f"/></dir></target><target name="mageweb"><dir name="js"><dir name="altima"><dir name="bettercreditcardform"><file name="card.js" hash="e993653faa726ae1ebd539ea97309481"/><file name="check_jquery.js" hash="32878661b2bde879b2e93c48ae131941"/><file name="check_jquery.js~" hash="2149fd13025e5115156d75147b9dac0f"/><file name="jquery-migrate-1.2.1.min.js" hash="eb05d8d73b5b13d8d84308a4751ece96"/><file name="jquery.card.js" hash="60fdfa29b53cce38a188444c63bef47c"/><file name="jquery.noconflict.js" hash="3179f2255b046d5f2e9a71e365287bef"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.6</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.6.0.0</min><max>1.9.0.1</max></package></required></dependencies>
+</package>
