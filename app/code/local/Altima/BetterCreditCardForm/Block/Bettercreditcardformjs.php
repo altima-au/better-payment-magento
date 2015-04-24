@@ -3,7 +3,7 @@
 /**
  * Altima Better Credit Card Form Extension
  *
- * Altima web systems.
+ * Altima Interactive.
  *
  * NOTICE OF LICENSE
  *
@@ -13,10 +13,10 @@
  *
  * @category   Altima
  * @package    Altima_BetterCreditCardForm
- * @author     Altima Web Systems http://altimawebsystems.com/
- * @license    http://blog.altima.net.au/lookbook-magento-extension/lookbook-professional-licence/
+ * @author     Altima Interactive http://altima.net.au/
+ * @license    MIT http://opensource.org/licenses/MIT
  * @email      support@altima.net.au
- * @copyright  Copyright (c) 2012 Altima Web Systems (http://altimawebsystems.com/)
+ * @copyright  Copyright (c) 2015 Altima Interactive (http://shop.altima.net.au/)
  */
 class Altima_BetterCreditCardForm_Block_BetterCreditCardFormjs extends Mage_Core_Block_Template {
 
